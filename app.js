@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', cityWeather)
 
 function weatherDataFetch(city) {
-    var key = 'e573510f4cb482f5e6bf8eced423cbd7';
+    var key = '0ca6039cec9a0c8c1ae8ad5e5bd8ff9b';
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`)
         .then(function(resp) {
             return resp.json()
@@ -15,8 +15,9 @@ function weatherDataFetch(city) {
         });
 }
 
+
 function cityWeather(e) {
-    weatherDataFetch( 'Tallinn');
+    weatherDataFetch( 'Polva');
 }
 
 function drawWeather( data ) {
